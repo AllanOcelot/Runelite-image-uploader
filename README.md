@@ -9,16 +9,10 @@ You will need both [NODE](https://nodejs.org/en/) and [NPM](https://www.npmjs.co
 To configure, open up the ftp_details file, and enter your FTP details
 inside the app.js file, edit the 'PATH_TO_PUT_IMAGES' variable to edit where images will be uploaded to.
 
-#Commands:
-'''
-'npm start'
-'''
-Starts the program.
+# Commands:
+'npm start' Starts the program.
 
-'''
-'exit' or 'quit'
-'''
-will terminate the program.
+'exit' or 'quit' will terminate the program.
 
 
 #Special thanks
