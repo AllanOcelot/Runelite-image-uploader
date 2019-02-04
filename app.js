@@ -13,6 +13,7 @@ var ftp_details = require('./ftp_details');
 var fs = require('fs');
 var watch = require('node-watch');
 var EasyFtp = require('easy-ftp');
+var stdin = process.openStdin();
 
 //PATH VARIABLES
 var HOME_ENV = process.env.HOME;
@@ -67,3 +68,13 @@ if( fs.existsSync(PATH_TO_SCREENSHOTS) ){
 }else{
     console.log('You have supplied an invalid path to the Runelite Images folder');
 }
+
+
+//USER INPUT COMMANDS VIA CONSOLE
+stdin.addListener("data", function(d) {
+    var USER_INPUT = d.toString().trim();
+    if( USER_INPUT === 'quit' || USER_INPUT === 'exit'){
+        console.log('Thank for using the Runelite image uploader, by webOcelot');
+        process.exit(0);
+    }
+});
