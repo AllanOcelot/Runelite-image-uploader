@@ -10,8 +10,8 @@ For me this was a fun project, but I'm happy to share the code incase anyone wan
 You will need both [NODE](https://nodejs.org/en/) and [NPM](https://www.npmjs.com/) installed on your machine.
 
 # Configuring the Runelite Image Uploader
-To configure, open up the ftp_details file, and enter your FTP details
-inside the app.js file, edit the 'PATH_TO_PUT_IMAGES' variable to edit where images will be uploaded to.
+To configure, open up the `ftp_details file`, and enter your FTP details.
+Inside the app.js file, edit the `PATH_TO_PUT_IMAGES` if you wish to change the upload location of images.
 
 # Commands:
 `npm start` Starts the program.
