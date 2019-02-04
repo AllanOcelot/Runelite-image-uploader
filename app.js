@@ -18,10 +18,9 @@ var EasyFtp = require('easy-ftp');
 var HOME_ENV = process.env.HOME;
 var PATH_TO_SCREENSHOTS = HOME_ENV.concat('/.runelite/screenshots/test');
 var LENGTH_OF_PATH = PATH_TO_SCREENSHOTS.length;
+var PATH_TO_PUT_IMAGES = '/htdocs/runescape_images';
 
 //FTP DETAILS
-console.log(sourceFile.variableName);
-var FTP_PATH_TO_IMAGES = '/htdocs/runescape_images';
 var FTP_CLIENT = new EasyFtp();
 var FTP_CONFIG = {
     host: ftp_details.FTP_HOST,
@@ -45,8 +44,7 @@ if( fs.existsSync(PATH_TO_SCREENSHOTS) ){
         //We log in the console the human readable file added / removed.
         var IMAGE_NAME_FILE = name.substr(LENGTH_OF_PATH + 1);
         var IMAGE_NAME_RAW = IMAGE_NAME_FILE.substr(0, IMAGE_NAME_FILE.length-4);
-        //Output the name of the file.
-        console.log('====' + IMAGE_NAME_RAW  + ' ====| FILE NAME');
+        console.log('====| ' + IMAGE_NAME_RAW  + ' ====| FILE NAME');
 
         console.log(name);
 
@@ -55,7 +53,6 @@ if( fs.existsSync(PATH_TO_SCREENSHOTS) ){
             console.log('Attepting FTP Conenction');
             FTP_CLIENT.connect(FTP_CONFIG);
             FTP_CLIENT.upload(name, PATH_TO_PUT_IMAGES, function(err){
-                console.log(err);
                 if(err){
                     console.log(err);
                 }else{
