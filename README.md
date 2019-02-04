@@ -1,5 +1,9 @@
-# Runelite-image-uploader
-A node bot that uploads all screenshots to an FTP server. Great for blogs about runescape, or for people who wish to keep their screenshots on a web server using FTP.
+# Runelite Image Uploader
+A node bot that uploads all screenshots saved from RuneLite (runescape client) to an FTP server.
+
+Great for blogs about Old School Runescape, or for people who wish to keep their screenshots on a web server using FTP.
+
+For me this was a fun project, but I'm happy to share the code incase anyone wants to save time.
 
 
 # Installing:
@@ -10,10 +14,10 @@ To configure, open up the ftp_details file, and enter your FTP details
 inside the app.js file, edit the 'PATH_TO_PUT_IMAGES' variable to edit where images will be uploaded to.
 
 # Commands:
-'npm start' Starts the program.
+`npm start` Starts the program.
 
-'exit' or 'quit' will terminate the program.
+`exit` or `quit` will terminate the program.
 
 
-#Special thanks
+# Special thanks
 Special thanks to [Easy-FTP](https://github.com/humy2833/easy-ftp) for providing a very simple node FTP interface.
