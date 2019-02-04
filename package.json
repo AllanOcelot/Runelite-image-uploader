@@ -1,0 +1,23 @@
+{
+  "name": "node-osrs-bot",
+  "version": "1.0.0",
+  "description": "A simple node bot that checks for images generated via RuneLite, FTP's to a website and updates it's files",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "OSRS",
+    "bot",
+    "FTP",
+    "node"
+  ],
+  "author": "AllanCodes",
+  "license": "ISC",
+  "dependencies": {
+    "easy-ftp": "^0.3.44",
+    "fs": "0.0.1-security",
+    "ftp": "^0.3.10",
+    "node-watch": "^0.6.0"
+  }
+}
